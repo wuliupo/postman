@@ -1,10 +1,17 @@
 I convert this Chrome APP (plugin) to a webapp.
 
-# [POSTMAN](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop)
+# POSTMAN
 
 Website: https://www.getpostman.com/
 
-Supercharge your API workflow with Postman! 
+Webstore: [3.1](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop)
+~\AppData\Local\Google\Chrome\User Data\Default\Extensions\fhbjgbiflinjbdggehcddcbncdddomop
+
+Webstore: [0.8](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm)
+~\AppData\Local\Google\Chrome\User Data\Default\Extensions\fdmmgilgnpjigdojojpjoooidkmcomcm
+
+
+## Supercharge your API workflow with Postman! 
 
 Build, test, and document your APIs faster. More than a million developers already do.…
 
