@@ -1672,7 +1672,7 @@ pm.filesystem = {
                                 url:fileEntry.toURL()
                             };
 
-                            if (typeof chrome !== "undefined") {
+                            if (chrome && chrome.tabs) {
                                 chrome.tabs.create(properties, function (tab) {
                                 });
                             }
@@ -5305,8 +5305,7 @@ pm.request = {
         },
 
         loadCookies:function (url) {
-            chrome.cookies.getAll({url:url}, function (cookies) {
-                var count;
+            chrome.cookies && chrome.cookies.getAll({url:url}, function (cookies) {
                 pm.request.response.renderCookies(cookies);
             });
         },
