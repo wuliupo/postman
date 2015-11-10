@@ -33,7 +33,7 @@ pm.broadcasts = {
         $.get(broadcast_url, function (data) {
             pm.broadcasts.setBroadcasts(data["broadcasts"]);
             pm.broadcasts.renderBroadcasts();
-        });
+        }, 'json');
     },
 
     setLastUpdateTime:function (last_update) {

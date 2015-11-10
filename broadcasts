@@ -1,0 +1,28 @@
+    {
+        "broadcasts": [
+            {
+                "id": "7",
+                "type": "message",
+                "content": "Run Postman collections with Newman in your terminal. Integrate them with build systems or use a cron to run periodically! <a href='http://blog.getpostman.com/index.php/2014/05/12/meet-newman-a-command-line-companion-for-postman/'>Read more</a>",
+                "time": "2014-05-13 00:00:00"
+            },
+            {
+                "id": "6",
+                "type": "message",
+                "content": "Upgrade to v0.9.x! Improved collections, automated tests, restricted headers and much more! Check out <a href='http://www.getpostman.com/link/legacy_jetpacks_blog'>the blog</a> for more details.",
+                "time": "2013-02-07 00:00:00"
+            },
+            {
+                "id": "5",
+                "type": "message",
+                "content": "v0.8.0.3 is now available on the Chrome Web Store. This is a bug fix release. If you encounter any issues, please file an issue on Github!",
+                "time": "2013-02-07 00:00:00"
+            },
+            {
+                "id": "4",
+                "type": "message",
+                "content": "Hi! This is the broadcasts dropdown. Important stuff about Postman will come here in the future.",
+                "time": "2013-01-11 00:00:00"
+            }
+        ]
+    }

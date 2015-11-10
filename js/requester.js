@@ -80,7 +80,8 @@ pm.indexedDB.modes = {
 
 pm.fs = {};
 
-pm.webUrl = "https://www.getpostman.com";
+pm.webUrl = ".";
+// pm.webUrl = "https://www.getpostman.com";
 // pm.webUrl = "http://localhost/postman/html";
 pm.bannedHeaders = [
     'accept-charset',
@@ -218,7 +219,7 @@ pm.broadcasts = {
         $.get(broadcast_url, function (data) {
             pm.broadcasts.setBroadcasts(data["broadcasts"]);
             pm.broadcasts.renderBroadcasts();
-        });
+        }, 'json');
     },
 
     setLastUpdateTime:function (last_update) {
@@ -471,16 +472,10 @@ pm.collections = {
     uploadCollection:function (id, callback) {
         pm.collections.getCollectionData(id, function (name, type, filedata) {
             var uploadUrl = pm.webUrl + '/collections';
-            $.ajax({
-                type:'POST',
-                url:uploadUrl,
-                data:filedata,
-                success:function (data) {
-                    var link = data.link;
-                    callback(link);
-                }
-            });
-
+            $.post(uploadUrl, filedata, function (data) {
+				var link = data.link;
+				callback(link);
+			}, 'json');
         });
     },
 

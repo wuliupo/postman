@@ -80,7 +80,8 @@ pm.indexedDB.modes = {
 
 pm.fs = {};
 
-pm.webUrl = "https://www.getpostman.com";
+pm.webUrl = ".";
+// pm.webUrl = "https://www.getpostman.com";
 // pm.webUrl = "http://localhost/postman/html";
 pm.bannedHeaders = [
     'accept-charset',
